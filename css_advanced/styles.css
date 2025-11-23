@@ -58,7 +58,7 @@ ul li a {
   font-size: 12px;
 }
 
-main section:first-child {
+.one {
   background: url(images/hero_background.png);
   color: #FFF;
   display: flex;
@@ -119,4 +119,29 @@ button {
 
 .pros div p {
   font-style: italic;
+}
+
+.two {
+  background: #C271FF;
+  color: #FFF;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 392px;
+  font-size: 22px;
+}
+
+.presenter-container {
+  width: 943px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
