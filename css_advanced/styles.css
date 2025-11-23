@@ -145,3 +145,102 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.three {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.three h2,
+.popular {
+  text-align: center;
+  font-size: 32px;
+  font-weight: lighter;
+  margin-bottom: 70px;
+}
+
+.popular {
+  color: #C271FF;
+}
+
+.videos-container {
+  width: 1028px;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.preview {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.card {
+  position: relative;
+}
+
+.play {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  cursor: pointer;
+}
+
+.card h3 {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: rgba(7, 22, 41, 0.5);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.phillip {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+}
+
+.phillip img {
+  height: 30px;
+  width: 30px;
+}
+
+.phillip h4 {
+  color: #C271FF;
+}
+
+.stars {
+  display: flex;
+  color: #C271FF;
+  gap: 10px;
+  padding: 10px;
+}
+
+.stars div {
+  height: 15px;
+  width: 15px;
+}
+
+.no-color {
+  color: #D8D8D8;
+}
+
+.stars + p {
+  color: #C271FF;
+}
+
+.stars-container {
+  display: flex;
+  justify-content: space-between;
+}
