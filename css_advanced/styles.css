@@ -244,3 +244,47 @@ button {
   display: flex;
   justify-content: space-between;
 }
+
+.four {
+  background: #071629;
+  color: #FFF;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.four h2,
+.free {
+  text-align: center;
+  font-size: 32px;
+  font-weight: lighter;
+  margin-bottom: 50px;
+}
+
+.free {
+  color: #C271FF;
+}
+
+.free-container {
+  display: flex;
+  width: 1020px;
+  margin-bottom: 50px;
+  gap: 10px;
+}
+
+.free-container div {
+  width: 257px;
+  height: 153px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.free-container div img {
+  width: 44px;
+  height: 35px;
+}
