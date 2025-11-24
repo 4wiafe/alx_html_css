@@ -41,7 +41,7 @@ nav {
   align-items: center;
 }
 
-nav img {
+.logo {
   width: 162px;
   height: 26px;
 }
@@ -328,4 +328,31 @@ button {
 
 .ans-color {
   color: rgba(7, 22, 41, 0.5);
+}
+
+footer {
+  background: #071629;
+  padding: 100px;
+}
+
+footer section div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+  color: #FFF;
+  border-radius: 50%;
+  font-size: 28px;
+  text-align: center;
+}
+
+footer section p {
+  color: #ffffff73;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 50px;
 }
