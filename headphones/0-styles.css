@@ -5,3 +5,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: "MyFont1";
+  src: url("./fonts/source-sans-pro/SourceSansPro-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "MyFont2";
+  src: url("./fonts/Spin-Cycle/spincycle_ot.otf") format("opentype");
+}
