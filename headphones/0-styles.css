@@ -33,25 +33,34 @@ body {
 .header-container {
   width: 100%;
   background: url("./images/headphones_hero_1.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   color: var(--plain);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
+  text-align: center;
 }
 
-.header {
+.nav-container {
+  display: none;
+}
+
+header {
   width: 100%;
 }
 
 .hero-header {
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 230px;
 }
 
-.menu-btn {
+.btn-container {
   width: 25px;
   height: 20px;
 }
@@ -59,11 +68,11 @@ body {
 .hamburger {
   width: 100%;
   height: 100%;
+  border: none;
+  background: transparent;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: transparent;
-  border: none;
 }
 
 .one,
@@ -79,28 +88,16 @@ body {
 .two,
 .three {
   height: 3px;
-  background: var(--plain);
   border-radius: 5px;
+  background: var(--plain);
 }
 
 .logo img {
-  width: 150px;
+  width: 160px;
 }
 
-.header-text {
-  margin-top: 150px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.header-title h1 {
-  width: 100%;
-}
-
-.header-subtitle {
-  width: 250px;
+.header-title {
+  margin-bottom: 10px;
 }
 
 .header-subtitle {
@@ -108,13 +105,14 @@ body {
 }
 
 .cta button {
-  width: 162px;
+  width: 160px;
   padding: 15px;
-  margin-bottom: 50px;
   border: none;
   border-radius: 25px;
   background: var(--hover-active);
   color: var(--plain);
+  font-weight: bold;
+  margin-bottom: 100px;
   cursor: pointer;
 }
 
@@ -122,90 +120,52 @@ body {
   opacity: 0.9;
 }
 
-.cta button:active {
-  opacity: 0.9;
-}
-
 .header-paragraph {
   margin-bottom: 50px;
-  width: 400px;
-  text-align: center;
-}
-
-.nav-container {
-  width: 250px;
-  display: none;
-}
-
-nav {
-  width: 100%;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links li a {
-  color: var(--plain);
-  text-decoration: none;
-}
-
-.nav-links li a:hover {
-  color: var(--hover-active);
-}
-
-.nav-links li a:active {
-  color: var(--hover-active);
 }
 
 @media screen and (min-width: 601px) {
-  .nav-container {
-    display: block;
+  .header-container {
+    padding: 40px;
   }
 
   .hero-header {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
   }
 
-  .logo img {
-    width: 150px;
-  }
-
-  .menu-btn {
+  .btn-container {
     display: none;
   }
 
-  .header-text {
-    margin-top: 250px;
+  .nav-container {
+    display: block;
+    width: 250px;
   }
 
-  .header-subtitle {
+  nav {
     width: 100%;
   }
 
-  .header-paragraph {
+  .nav-links {
     width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-links li a {
+    color: var(--plain);
+    text-decoration: none;
+  }
+
+  .nav-links li a:hover {
+    color: var(--hover-active);
   }
 }
 
-@media  screen and (min-width: 1025px) {
+@media screen and (min-width: 769px) {
   .header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  header {
-    width: 80%;
-    margin-top: 10px;
-  }
-
-  .nav-container {
-    width: 300px;
+    padding: 60px;
   }
 
   .logo img {
@@ -216,7 +176,13 @@ nav {
     font-size: 1.2rem;
   }
 
-  .header-paragraph {
-    width: 80%;
+  .nav-container {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .header-container {
+    padding: 30px 200px 50px 200px;
   }
 }
