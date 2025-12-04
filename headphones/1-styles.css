@@ -13,6 +13,7 @@ html {
 :root {
   --plain: #FFF;
   --hover-active: #FF6565;
+  --headers-text: #071629;
 }
 
 @font-face {
@@ -136,6 +137,34 @@ header {
   margin-bottom: 50px;
 }
 
+.what-we-do-container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: var(--headers-text);
+}
+
+#what-we-do {
+  margin-top: 100px;
+}
+
+.what-we-do-desdcription h2 {
+  margin-bottom: 15px;
+}
+
+.what-we-do-desdcription {
+  margin-bottom: 50px;
+}
+
+i {
+  font-size: 5rem;
+  color: var(--hover-active);
+}
+
+.what-we-do-icons div {
+  margin-bottom: 50px;
+}
+
 @media screen and (min-width: 601px) {
   .header-container {
     padding: 40px;
@@ -173,6 +202,24 @@ header {
   .nav-links li a:hover {
     color: var(--hover-active);
   }
+
+  .what-we-do-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .what-we-do-icons div {
+    width: 40%;
+  }
+
+  i {
+    font-size: 5.5rem;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -196,5 +243,19 @@ header {
 @media screen and (min-width: 1025px) {
   .header-container {
     padding: 30px 200px 50px 200px;
+  }
+
+  header {
+    max-width: 1300px;
+  }
+
+  .what-we-do-icons {
+    flex-wrap: nowrap;
+  }
+
+  #what-we-do {
+    width: 800px;
+    margin: 70px auto;
+
   }
 }
