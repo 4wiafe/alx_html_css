@@ -219,6 +219,59 @@ i {
   transform: translate(-50%, -50%);
 }
 
+.contact-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-container section {
+  margin-top: 50px;
+  width: 100%;
+}
+
+form h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+input,
+textarea {
+  border: none;
+  font-family: inherit;
+  width: 65%;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #979797;
+}
+
+.name-field,
+.email-field,
+.message-field {
+  display: flex;
+  gap: 5px;
+  margin-top: 50px;
+}
+
+.cta {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (min-width: 601px) {
   .header-container {
     padding: 40px;
@@ -283,6 +336,10 @@ i {
   .result {
     width: 40%;
   }
+
+  .contact-container section {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -300,6 +357,10 @@ i {
 
   .nav-container {
     width: 300px;
+  }
+
+  .contact-container section {
+    width: 50%;
   }
 }
 
@@ -324,5 +385,9 @@ i {
 
   .results-pentagon {
     flex-wrap: nowrap;
+  }
+
+  .contact-container section {
+    width: 40%;
   }
 }
