@@ -104,12 +104,14 @@ header {
   height: 3px;
   border-radius: 5px;
   background: var(--plain);
+  transition: all 0.5s ease;
 }
 
 .one.active {
   transform: rotate(45deg);
   position: absolute;
   top: 50%;
+  transition: all 0.5s ease;
 }
 
 .two.active {
@@ -120,10 +122,35 @@ header {
   transform: rotate(135deg);
   position: absolute;
   top: 50%;
+  transition: all 0.5s ease;
 }
 
 .logo img {
   width: 160px;
+}
+
+.nav-container.active {
+  display: block;
+  position: absolute;
+  left: 40%;
+  top: 12%;
+  animation: fade-in 0.5s ease;
+}
+
+.nav-links.active {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: var(--plain);
+  text-decoration: none;
+}
+
+.nav-links li a:active {
+  color: var(--hover-active);
 }
 
 .header-title {
